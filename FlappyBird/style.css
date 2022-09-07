@@ -1,0 +1,145 @@
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+}
+.screen{
+    position: absolute;
+    width: 1200px;
+    height: 950px;
+    overflow: hidden;
+    
+}
+.bgImg{
+    width: 1200px;
+    height: 950px;
+    /* opacity: .2; */
+}
+.ground{
+    position: fixed;
+    top: 740px;
+    width: 1200px;
+    height: 210px;
+    opacity: .9;
+    z-index: 50;
+}
+.bird {
+    height: 80px;
+    width: 80px;
+    position: relative;
+    top: 200px;
+    left: 100px;
+    z-index: 100;
+}
+.message {
+    position: relative;
+    z-index: 10;
+    height: 40px;
+    font-size: 40px;
+    font-weight: 100;
+    color: black;
+    top: 240px;
+    left: 0px;
+    text-align: center;
+}
+.score{
+    position: relative;
+    z-index: 10;
+    height: 45px;
+    width: 160px;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 100;
+    color: goldenrod;
+    top: -100px;
+    left: 40px;
+    background-color: rgba(0, 0, 0, 0.372);
+    border-radius: 50px;
+    
+}
+.scoreValue{
+    color: gold;
+    font-size: 30px;
+    text-align: start;
+}
+.background{
+    position: fixed;
+    width: 1200px;
+    height: 760px;
+    /* border: solid .1px black; */
+    
+}
+.lePipes{
+    /* z-index: 10000; */
+    position: relative;
+    display: block;
+    flex-direction: column;
+    justify-content: center;
+    width: 80px;
+    height: 1900px;
+    top: -650px;
+    left: 1500px;
+    /* border: solid 5px black; */
+    animation: pipes 5s infinite linear;
+    animation-delay: 0s;
+}
+.lePipes2{
+    /* z-index: 10; */
+    position: relative;
+    display: block;
+    flex-direction: column;
+    justify-content: center;
+    width: 80px;
+    height: 1900px;
+    top: -2550px;
+    left: 1500px;
+    /* border: solid 5px black; */
+    animation: pipes 5s infinite linear;
+    animation-delay: 2.5s;
+}
+.topPipe{
+    position: relative;
+    top:150px;
+    height: 500px;
+    width: 80px;
+}
+.bottomPipe{
+    position: relative;
+    top:150px;
+    height: 700px;
+    width: 80px;
+}
+.gapPipe{
+    position: relative;
+    top:150px;
+    height: 225px;
+    /* border: solid .1px black; */
+    width: 80px;
+}
+.topPipe2{
+    position: relative;
+    top: 350px;
+    height: 500px;
+    width: 80px;
+}
+.bottomPipe2{
+    position: relative;
+    top: 350px;
+    height: 700px;
+    width: 80px;
+}
+.gapPipe2{
+    position: relative;
+    top: 350px;
+    height: 225px;
+    /* border: solid .1px black; */
+    width: 80px;
+}
+
+@keyframes pipes {
+    0%{ left: 1500px;}
+    100%{ left: -80px;}
+}
